@@ -1,0 +1,3 @@
+- Cau lenh config name: git config --global user.name “Andy”
+
+- Cau lenh config email: git config --global user.email “guofang648@gmail.com”
