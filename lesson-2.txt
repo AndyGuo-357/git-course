@@ -1,0 +1,29 @@
+1. Giải thích các câu lệnh:
+- git init
+    => Khởi tạo thư mục được quản lý bởi Git
+- git add <file_name>
+    => Thêm file vào vùng staging
+- git add .
+    => Thêm toàn bộ file vào vùng staging
+- git commit - m "message"
+    => Tạo một commit mới trong Git với nội dung mô tả là "message"
+
+2. Hãy tưởng tượng có 1 folder lesson-2 mới được tạo. Hãy liệt kê các file theo từng vùng sau khi thao tác một loạt các lệnh sau:
+
+a. Tạo 3 file: file1, file2, file3
+=> Lúc này, 3 file vừa được tạo và chưa được Git quản lý. Và 3 files này vẫn là untracked files và ở vùng working directory.
+
+b. Chạy lệnh: git init
+=> Git được khởi tạo và 3 files này vẫn chưa thay đổi trạng thái và vẫn là untracked files ở vùng working directory.
+
+c. Chạy lệnh: git commit -m "init project"
+=> Không có gì được add nên commit này không chứa gì cả. Staging area vẫn rỗng và 3 files này vẫn là untracked files ở vùng working directory.
+
+d. Chạy lệnh: git add file1
+=> "file1" được add vào Staging area. "file2", "file3" vẫn là untracked files và ở vùng working directory.
+
+e. Chạy lệnh: git commit -m "add file1"
+=> "file1" được commit vào lịch sử và ở vùng Repository . Staging area rỗng và "file2", "file3" vẫn là untracked files và ở vùng working directory.
+
+f. Chạy lệnh: git add file
+=> Git sẽ báo lỗi vì "file" không tồn tại.
